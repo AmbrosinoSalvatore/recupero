@@ -1,6 +1,9 @@
 
-{{pokemonList.results|json}}
-<div *ngFor="let tipo of pokemonList">
-  {{tipo.name}}
-  {{tipo.url}}
+
+<div *ngFor="let tipo of pokemonList.results">
+  
+  <a [routerLink]="['/pokemon', giocatori.id]">
+    {{tipo.name}}
+  </a>
 </div>
+<router-outlet></router-outlet>
