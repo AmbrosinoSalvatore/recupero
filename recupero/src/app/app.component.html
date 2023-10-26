@@ -2,7 +2,7 @@
 
 <div *ngFor="let tipo of pokemonList.results">
   
-  <a [routerLink]="['/pokemon', giocatori.id]">
+  <a [routerLink]="['/pokemon',getLastPart(tipo.url)]">
     {{tipo.name}}
   </a>
 </div>

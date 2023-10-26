@@ -20,4 +20,10 @@ export class AppComponent {
   doSomething = (data: TypeList) => {
     this.pokemonList = data
   }
+  getLastPart(url:string){
+    var parts = url.split('/');
+    parts.pop()
+    var lastSegment = parts.pop();
+    return lastSegment
+  }
 }
