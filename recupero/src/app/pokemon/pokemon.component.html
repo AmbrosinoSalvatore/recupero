@@ -1,1 +1,3 @@
-{{pokemonList}}
+<div *ngFor="let p of pokemonList.pokemon">
+    <li><a>{{p.pokemon.name}}</a></li>
+</div>
